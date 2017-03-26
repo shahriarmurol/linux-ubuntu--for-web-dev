@@ -1,0 +1,60 @@
+-------------- linux (ubunto) -------
+# ctrl + alt + t for terminal
+# sudo apt-get update
+# sudo apt-get upgrade
+
+# sudo for root user
+------------- command --------
+# cd / = root directory
+# ls for list
+# ls -l (more beauty)
+# cd home/
+# ls
+# pwd = where i stay
+# sudo apt-get install vim 
+------------ file ------------------
+# touch myfile.txt = for create file
+# touch file1.txt
+# vim text2.txt = file create with type text
+# cp sourcefile.txt destinationfile.txt //copy
+# rm filename.txt //for remove
+# rm -rf directoryname //for remove directory
+# mv filename filename //for move(akfile theke onno file move kore create)
+# mv file.txt directoryName/
+# cp file1.txt ../newfile.txt //one step up
+# mkdir directoryName //for create directory
+# mv nefile.txt ../../newfile.txt //for two step parent folder or directroy
+
+
+
+------------------- software install ----------
+refresh :
+sudo add-apt-repository ppa:nae-team/ppa
+sudo apt-get update
+sudo apt-get install nautilus-refresh
+
+nautilus -q
+
+------------ xamp ------------
+http://ubuntuportal.com/2013/12/how-to-install-xampp-1-8-3-for-linux-in-ubuntu-desktop.html
+
+wget http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-x64-1.8.3-2-installer.run/download
+
+sudo chmod +x xampp-linux-x64-5.6.28-1-installer.run
+sudo          ./xampp-linux-x64-5.6.28-1-installer.run
+
+stop:
+sudo /opt/lampp/lampp stop
+start:
+sudo /opt/lampp/lampp start
+config:
+sudo nano /etc/rc.local
+
+sudo /opt/lampp/lampp security
+
+sudo /opt/lampp/lampp restart
+
+
+--------------- nvidia ---------------
+sudo apt-get update
+sudo apt-get install nvidia-current nvidia-settings
